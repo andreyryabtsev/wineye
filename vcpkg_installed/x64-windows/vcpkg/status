@@ -1,0 +1,61 @@
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 90cb92caf9d66aea452ec9cd0f0a97ccf580ed489c406092da8cfd59c92afd0b
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 8e81fcac9062133c4aeb6e05473a15a9f45a7f40b62cf87732e51039e8f50802
+Status: install ok installed
+
+Package: libuv
+Version: 1.50.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: aa45e0ff051a112bbd3a4f977e8f3f170e89dfe7b8574969f2aa4210b16220fd
+Description: libuv is a multi-platform support library with a focus on asynchronous I/O.
+Status: install ok installed
+
+Package: usockets
+Version: 0.8.8
+Port-Version: 2
+Depends: libuv, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 8179b1eb69d7a1fdb9db35e7cc5775051212e672c22131f4957a1ca9148f0a22
+Description: Miniscule cross-platform eventing, networking & crypto for async applications
+Status: install ok installed
+
+Package: uwebsockets
+Version: 20.74.0
+Depends: usockets
+Architecture: x64-windows
+Multi-Arch: same
+Abi: be2c2f0c539a640301147684217f255058cdae69d935251b390f08441d32ea25
+Description: Simple, secure & standards compliant web I/O for the most demanding of applications
+Status: install ok installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 0d3645122b86e63965e977d0437d544cbef1f576eab3897e8d93ae9bbf0f8a2b
+Description: A compression library
+Status: install ok installed
+
+Package: nlohmann-json
+Version: 3.11.3
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: a9d412868f0580b207ba23b0c6aba942949ef7bff87484bc1d674473e40362c1
+Description: JSON for Modern C++
+Status: install ok installed
+

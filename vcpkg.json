@@ -1,0 +1,8 @@
+{
+  "dependencies": [
+    "libuv",
+    "nlohmann-json",
+    "uwebsockets",
+    "zlib"
+  ]
+}
